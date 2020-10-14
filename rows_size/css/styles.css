@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+/* 
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 39% 40% 10% 9%;
+  grid-template-rows: 40% 20% 18%;
+  gap: 5px;
+  justify-content: center;
+  color: white;
+} */
+
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  justify-content: center;
+  color: white;
+}
+
+.items{
+  background: lightblue;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.items:nth-of-type(1){
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
+  background: url(../img/pexels-thisisengineering-3861958.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items:nth-of-type(2){
+  grid-row: 3 / 6;
+  grid-column: span 2;
+  background: url(../img/pexels-burst-374720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items:nth-of-type(3){
+  grid-row: 3 / 6;
+  grid-column: span 1;
+  background: url(../img/pexels-julien-brion-102061.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items:nth-of-type(4){
+  grid-column: span 2;
+  grid-row: 3 / 4;
+  background: url(../img/pexels-karsten-madsen-18105.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items:nth-of-type(5){
+  grid-column: span 1;
+  grid-row: 4 / 6;
+  background: url(../img/pexels-kevin-ku-577585.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items:nth-of-type(6){
+  grid-column: span 1;
+  grid-row: 4 / 6;
+  background: url(../img/pexels-wendy-wei-3959920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
