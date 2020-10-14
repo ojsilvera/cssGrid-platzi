@@ -17,8 +17,19 @@ body{
   display: grid;
   /* grid-template: columns / rows; */
   /* establece las filas y columnas implicitas en una sola linea de codigo */
-  grid-template: 50% 50% / 500px 500px 500px;
-  grid-gap: 20px;
+  grid-template: 500px 500px 500px/50% 50%;
+  /* grid-template-rows: 500px 500px 500px;
+  grid-template-columns: 50% 50%; */
+  /* espaciado entre todas las filas y columnas */
+  /* gap: 20px; */
+  /* espaciado no uniforme entre filas y columnas */
+  /* grid-gap: 50px 200px; */
+  column-gap: 50px;
+  row-gap: 150px;
+  /* grid-column-gap: 50px;
+  grid-row-gap: 500px; */
+  justify-content: center;
+  padding: 0px 150px;
 }
 
 .item{
