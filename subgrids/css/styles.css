@@ -15,16 +15,26 @@ body{
 
 .container{
   display: grid;
-  /* declarando filas y columnas explicitas */
-  grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 300px 300px;
   /* grid-template: columns / rows; */
-  /* establece las filas y columnas explicitas en una sola linea de codigo */
+  /* establece las filas y columnas implicitas en una sola linea de codigo */
   grid-template: 50% 50% / 500px 500px 500px;
+  gap: 20px;
 }
 
 .item{
   background: lightblue;
   padding: 10px;
   border: 1px solid red;
+}
+
+/* pseudo clase que permite seleccionar un elemento de manera generica */
+.item:nth-of-type(4){
+  background-color: red;
+  display: grid;
+  grid-template: 10rem 10rem 5rem 10rem/ 10rem 10rem;
+  overflow: auto;
+}
+
+.item .item{
+  background-color: yellow;
 }
