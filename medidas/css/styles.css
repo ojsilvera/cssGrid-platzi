@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(163, 186, 207);
+}
+
+.title{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container{
+  display: grid;
+  /* fr-> distribuye de manera homogenea las columnas de la grilla */
+  /* sin tener en cuenta el contenido de cada celda */
+  /* funcion repeat y minmax */
+  /* repeat(cantidad de veces, que voy a repetir) */
+  /* minmax(valorminimo, valormaximo) */
+  /* generar 4 columnas, con minimo 1fr y maximo 4fr */
+  grid-template: 500px 500px 500px/ repeat(4, minmax(20px, 1fr));
+  gap: 20px;
+}
+
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}

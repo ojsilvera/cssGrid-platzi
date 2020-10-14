@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(163, 186, 207);
+}
+
+.container{
+  display: grid;
+  grid-template: 10% 78% 10%/ 12% 88%;
+  gap: 5px;
+  height: 100vh;
+  justify-content: center;
+  /* establece las areas dentro del grid */
+  grid-template-areas: "header header" "left contenido" "footer footer";
+  overflow: hidden;
+  padding: 0px 20px;
+}
+
+/* ubica los elementos en su area correspondiente en el grid */
+.header{
+grid-area: header;
+}
+
+.left{
+  grid-area: left;
+}
+
+.contenido{
+  grid-area: contenido;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+/* colores generales a los items */
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
