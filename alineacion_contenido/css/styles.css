@@ -1,16 +1,19 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .container{
   display: grid;
   height: 98vh;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 100px);
   gap: 5px;
-  justify-items: center; /*alinea horizontal*/
-  align-items: center; /*alinea vertical*/
+  /* start/center/end/space-between/space-around/space-evenly */
+  justify-content: center; /* alineacion horixzontal */
+  align-content:  center;           /* alineacion vertical */
+  color: black;
 }
 
 .items{
@@ -18,8 +21,3 @@ body{
   border: 1px solid rgb(255, 255, 255);
 }
 
-
-.items:nth-last-of-type(5){
-  align-self: start;
-  justify-self: start;
-}
